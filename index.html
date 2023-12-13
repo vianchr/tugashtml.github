@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vian">
+    <title>@vianchr-71230972</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        welcome to my personal webpage
+    </header>
+    <div style="display:flex; flex-direction: row">
+        <section id="foto">
+            <img src="WhatsApp Image 2023-11-30 at 19.16.25.jpeg" width="170" height="210">
+            </section>
+            <div>   
+                <section id="tentang-saya">
+                    <b>
+                        <h2> About me</h2>
+                        
+                    </b>
+        
+                    <b>
+                        <h3>Oktavian Christ Putranto</h3>
+                    </b>
+                <ul> 
+                   <li><a href="https://instagram.com/vian.chr?igshid=NGVhN2U2NjQ0Yg=="> @vianchr </a></li><br>
+                        <li>Yogyakarta,Maguwoharjo</li><br>
+                        <li>Duta wacana Christian University</li><br>
+                </ul>   
+                </section>
+                <section id="keterampilan">
+                    <h1>SKILLSET</h1>
+                    <ol>
+                        <li>CSS</li>
+                        <li>C</li>
+                        <li>HTML</li>
+                        <li>Python</li>
+                    </ol>
+                </section>
+            </div>
+    </div>
+
+    
+    <button id="tombolGantiWarna" onclick="gantiWarnaRandom()">
+        ganti warna
+    </button>
+
+    <footer>
+        Thank You for Visiting My Web Page
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ["red","green","blue","white"];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = "gantiWarnaRandom";
+        tombolGantiWarna;
+    </script>
+</body>
+</html>
