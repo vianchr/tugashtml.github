@@ -14,8 +14,10 @@
     </header>
     <div style="display:flex; flex-direction: row">
         <section id="foto">
-            <background-size : 300px;></background-size>
-            <img src="WhatsApp Image 2023-11-30 at 19.16.25.jpeg" width="225px">
+         <background-image src="WhatsApp Image 2023-11-30 at 19.16.25.jpeg" width="300">
+            color: white;
+         </background-image>
+            <img src="WhatsApp Image 2023-11-30 at 19.16.25.jpeg" width="225">
             </section>
             <div>   
                 <section id="tentang-saya">
@@ -62,7 +64,7 @@
             const warnaList = ["red","green","blue","white"];
             const randomIndex = Math.floor(Math.random() * warnaList.length);
             const warnaRandom = warnaList[randomIndex];
-            bodyElement.style.backgroundColor = warnaRandom;
+            bodyElement.style.backgroundImage = warnaRandom;
         }
 
         const tombolGantiWarna = "gantiWarnaRandom";
